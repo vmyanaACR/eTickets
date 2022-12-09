@@ -25,21 +25,23 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cinemas" asp-action="Index">Cinemas</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Cinemas" asp-action="Index"><i class="bi bi-camera-reels"></i> Cinemas</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Producers" asp-action="Index">Producers</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Producers" asp-action="Index"><i class="bi bi-headset"></i> Producers</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Actors" asp-action="Index">Actors</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Actors" asp-action="Index"><i class="bi bi-person-square"></i> Actors</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0" asp-controller="Movies" asp-action="Filter" style="padding-right: 15px;">
-                        <input name="searchString" type="text" class="form-control" placeholder="Search for a movie..." aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                    <form class="form-inline my-2 my-sm-0" asp-controller="Movies" asp-action="Filter" style="padding-right: 15px;">
+                        <input name="searchString" type="text" class="form-control" placeholder="Search for a movie..." aria-label="Recipient's username">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
                     </form>
+                    
                 </div>
             </div>
         </nav>
@@ -49,12 +51,7 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - eTickets
-        </div>
-    </footer>
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
